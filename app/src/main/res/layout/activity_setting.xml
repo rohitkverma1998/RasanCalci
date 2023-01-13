@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting">
+
+    <TextView
+        android:id="@+id/View_Deduct_Rice_PP"
+        android:layout_width="229dp"
+        android:layout_height="56dp"
+        android:text="Deduct Rice/Person"
+        app:layout_constraintBottom_toTopOf="@+id/View_Deduct_Wheat_PP"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_Deduct_Rice_PP"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_Wheat_PP"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/View_Deduct_Wheat_PP"
+        android:layout_width="229dp"
+        android:layout_height="56dp"
+        android:text="Deduct Wheat/Person"
+        app:layout_constraintBottom_toTopOf="@+id/View_Free_Rice_PP"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_Deduct_Wheat_PP"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_Deduct_Rice_PP"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/Edit_Deduct_Wheat_PP"
+        android:layout_width="87dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Kg"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Free_Rice_PP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/View_Deduct_Wheat_PP"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Deduct_Rice_PP"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/View_Free_Rice_PP"
+        android:layout_width="229dp"
+        android:layout_height="56dp"
+        android:text="Free Rice/Person"
+        app:layout_constraintBottom_toTopOf="@+id/View_Deduct_Free_Rice_PP"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_Free_Rice_PP"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_Deduct_Wheat_PP"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/View_Deduct_Free_Rice_PP"
+        android:layout_width="229dp"
+        android:layout_height="56dp"
+        android:text="Deduct Free Rice/Person"
+        app:layout_constraintBottom_toTopOf="@+id/View_Rice_Price_Pkg"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_Deduct_Free_Rice_PP"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_Free_Rice_PP"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/View_Rice_Price_Pkg"
+        android:layout_width="229dp"
+        android:layout_height="56dp"
+        android:text="Rice_Price_Pkg"
+        app:layout_constraintBottom_toTopOf="@+id/View_Wheat_Price_Pkg"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_Rice_Price_Pkg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_Deduct_Free_Rice_PP"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/View_Wheat_Price_Pkg"
+        android:layout_width="229dp"
+        android:layout_height="56dp"
+        android:text="Wheat_Price_Pkg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_Wheat_Price_Pkg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_Rice_Price_Pkg"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/View_Rice_PP"
+        android:layout_width="229dp"
+        android:layout_height="56dp"
+        android:text="Rice/Person"
+        app:layout_constraintBottom_toTopOf="@+id/View_Wheat_PP"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_Rice_PP"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/View_Wheat_PP"
+        android:layout_width="229dp"
+        android:layout_height="56dp"
+        android:text="Wheat/Person"
+        app:layout_constraintBottom_toTopOf="@+id/View_Deduct_Rice_PP"
+        app:layout_constraintEnd_toStartOf="@+id/Edit_Wheat_PP"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_Rice_PP"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/Edit_Deduct_Rice_PP"
+        android:layout_width="87dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Kg"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Deduct_Wheat_PP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/View_Deduct_Rice_PP"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Wheat_PP"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/Edit_Free_Rice_PP"
+        android:layout_width="87dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Kg"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Deduct_Free_Rice_PP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/View_Free_Rice_PP"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Deduct_Wheat_PP"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/Edit_Deduct_Free_Rice_PP"
+        android:layout_width="87dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Kg"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Rice_Price_Pkg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/View_Deduct_Free_Rice_PP"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Free_Rice_PP"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/Edit_Rice_Price_Pkg"
+        android:layout_width="87dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Rs"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Wheat_Price_Pkg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/View_Rice_Price_Pkg"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Deduct_Free_Rice_PP"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/Edit_Wheat_Price_Pkg"
+        android:layout_width="87dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Rs"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/View_Wheat_Price_Pkg"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Rice_Price_Pkg"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/Edit_Rice_PP"
+        android:layout_width="87dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Kg"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Wheat_PP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/View_Rice_PP"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/Edit_Wheat_PP"
+        android:layout_width="87dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Kg"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Deduct_Rice_PP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/View_Wheat_PP"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Rice_PP"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
