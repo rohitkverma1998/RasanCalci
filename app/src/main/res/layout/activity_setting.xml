@@ -4,213 +4,625 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Setting">
+    android:layout_gravity="left"
+    android:foregroundGravity="left"
+    app:layout_anchorGravity="left"
+    tools:context=".Setting"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="1dp">
 
-    <TextView
-        android:id="@+id/View_Deduct_Rice_PP"
-        android:layout_width="229dp"
-        android:layout_height="56dp"
-        android:text="Deduct Rice/Person"
-        app:layout_constraintBottom_toTopOf="@+id/View_Deduct_Wheat_PP"
-        app:layout_constraintEnd_toStartOf="@+id/Edit_Deduct_Rice_PP"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/View_Wheat_PP"
-        app:layout_constraintVertical_bias="0.5" />
 
-    <TextView
-        android:id="@+id/View_Deduct_Wheat_PP"
-        android:layout_width="229dp"
-        android:layout_height="56dp"
-        android:text="Deduct Wheat/Person"
-        app:layout_constraintBottom_toTopOf="@+id/View_Free_Rice_PP"
-        app:layout_constraintEnd_toStartOf="@+id/Edit_Deduct_Wheat_PP"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/View_Deduct_Rice_PP"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <EditText
-        android:id="@+id/Edit_Deduct_Wheat_PP"
-        android:layout_width="87dp"
-        android:layout_height="55dp"
-        android:ems="10"
-        android:hint="Kg"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Edit_Free_Rice_PP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/View_Deduct_Wheat_PP"
-        app:layout_constraintTop_toBottomOf="@+id/Edit_Deduct_Rice_PP"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <TextView
-        android:id="@+id/View_Free_Rice_PP"
-        android:layout_width="229dp"
-        android:layout_height="56dp"
-        android:text="Free Rice/Person"
-        app:layout_constraintBottom_toTopOf="@+id/View_Deduct_Free_Rice_PP"
-        app:layout_constraintEnd_toStartOf="@+id/Edit_Free_Rice_PP"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/View_Deduct_Wheat_PP"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <TextView
-        android:id="@+id/View_Deduct_Free_Rice_PP"
-        android:layout_width="229dp"
-        android:layout_height="56dp"
-        android:text="Deduct Free Rice/Person"
-        app:layout_constraintBottom_toTopOf="@+id/View_Rice_Price_Pkg"
-        app:layout_constraintEnd_toStartOf="@+id/Edit_Deduct_Free_Rice_PP"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/View_Free_Rice_PP"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <TextView
-        android:id="@+id/View_Rice_Price_Pkg"
-        android:layout_width="229dp"
-        android:layout_height="56dp"
-        android:text="Rice_Price_Pkg"
-        app:layout_constraintBottom_toTopOf="@+id/View_Wheat_Price_Pkg"
-        app:layout_constraintEnd_toStartOf="@+id/Edit_Rice_Price_Pkg"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/View_Deduct_Free_Rice_PP"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <TextView
-        android:id="@+id/View_Wheat_Price_Pkg"
-        android:layout_width="229dp"
-        android:layout_height="56dp"
-        android:text="Wheat_Price_Pkg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Edit_Wheat_Price_Pkg"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/View_Rice_Price_Pkg"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <TextView
-        android:id="@+id/View_Rice_PP"
-        android:layout_width="229dp"
-        android:layout_height="56dp"
-        android:text="Rice/Person"
-        app:layout_constraintBottom_toTopOf="@+id/View_Wheat_PP"
-        app:layout_constraintEnd_toStartOf="@+id/Edit_Rice_PP"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <TextView
-        android:id="@+id/View_Wheat_PP"
-        android:layout_width="229dp"
-        android:layout_height="56dp"
-        android:text="Wheat/Person"
-        app:layout_constraintBottom_toTopOf="@+id/View_Deduct_Rice_PP"
-        app:layout_constraintEnd_toStartOf="@+id/Edit_Wheat_PP"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/View_Rice_PP"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <EditText
-        android:id="@+id/Edit_Deduct_Rice_PP"
-        android:layout_width="87dp"
-        android:layout_height="55dp"
-        android:ems="10"
-        android:hint="Kg"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Edit_Deduct_Wheat_PP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/View_Deduct_Rice_PP"
-        app:layout_constraintTop_toBottomOf="@+id/Edit_Wheat_PP"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <EditText
-        android:id="@+id/Edit_Free_Rice_PP"
-        android:layout_width="87dp"
-        android:layout_height="55dp"
-        android:ems="10"
-        android:hint="Kg"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Edit_Deduct_Free_Rice_PP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/View_Free_Rice_PP"
-        app:layout_constraintTop_toBottomOf="@+id/Edit_Deduct_Wheat_PP"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <EditText
-        android:id="@+id/Edit_Deduct_Free_Rice_PP"
-        android:layout_width="87dp"
-        android:layout_height="55dp"
-        android:ems="10"
-        android:hint="Kg"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Edit_Rice_Price_Pkg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/View_Deduct_Free_Rice_PP"
-        app:layout_constraintTop_toBottomOf="@+id/Edit_Free_Rice_PP"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <EditText
-        android:id="@+id/Edit_Rice_Price_Pkg"
-        android:layout_width="87dp"
-        android:layout_height="55dp"
-        android:ems="10"
-        android:hint="Rs"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Edit_Wheat_Price_Pkg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/View_Rice_Price_Pkg"
-        app:layout_constraintTop_toBottomOf="@+id/Edit_Deduct_Free_Rice_PP"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <EditText
-        android:id="@+id/Edit_Wheat_Price_Pkg"
-        android:layout_width="87dp"
-        android:layout_height="55dp"
-        android:ems="10"
-        android:hint="Rs"
-        android:inputType="textPersonName"
+    <Button
+        android:id="@+id/Save_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FABB00"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/View_Wheat_Price_Pkg"
-        app:layout_constraintTop_toBottomOf="@+id/Edit_Rice_Price_Pkg"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <EditText
-        android:id="@+id/Edit_Rice_PP"
-        android:layout_width="87dp"
-        android:layout_height="55dp"
-        android:ems="10"
-        android:hint="Kg"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Edit_Wheat_PP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/View_Rice_PP"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.005" />
 
-    <EditText
-        android:id="@+id/Edit_Wheat_PP"
-        android:layout_width="87dp"
-        android:layout_height="55dp"
-        android:ems="10"
-        android:hint="Kg"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Edit_Deduct_Rice_PP"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Wheat_PP"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Wheat"
+        app:boxBackgroundColor="#19D6C5"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/View_Wheat_PP"
-        app:layout_constraintTop_toBottomOf="@+id/Edit_Rice_PP"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#090909"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Wheat_PP"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Deduct_Wheat_PP"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Less_W"
+        app:boxBackgroundColor="#19D6C5"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#090909"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Deduct_Wheat_PP"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Free_Wheat_PP"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Free_W"
+        app:boxBackgroundColor="#19D6C5"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#090909"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Free_Wheat_PP"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Deduct_Free_Wheat_PP"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Less_F_W"
+        app:boxBackgroundColor="#19D6C5"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#090909"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Deduct_Free_Wheat_PP"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Wheat_Price_Pkg"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:hint="W_Price"
+        app:boxBackgroundColor="#19D6C5"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#090909"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Wheat_Price_Pkg"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Take_Wheat_Price_Pkg"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:hint="D_W_Price"
+        app:boxBackgroundColor="#19D6C5"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#090909"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Take_Wheat_Price_Pkg"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Rice_PP"
+        android:layout_width="121dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Rice"
+        app:boxBackgroundColor="#F44336"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#9C27B0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Rice_PP"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Deduct_Rice_PP"
+        android:layout_width="121dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Less_Rice"
+        app:boxBackgroundColor="#F44336"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#9C27B0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Deduct_Rice_PP"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Free_Rice_PP"
+        android:layout_width="121dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Free_Rice"
+        app:boxBackgroundColor="#F44336"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#9C27B0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Free_Rice_PP"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Deduct_Free_Rice_PP"
+        android:layout_width="121dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Less_F_Ri"
+        app:boxBackgroundColor="#F44336"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#9C27B0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Deduct_Free_Rice_PP"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Rice_Price_Pkg"
+        android:layout_width="121dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="32dp"
+        android:hint="R_Price"
+        app:boxBackgroundColor="#F44336"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#9C27B0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Rice_Price_Pkg"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_Take_Rice_Price_Pkg"
+        android:layout_width="121dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="32dp"
+        android:hint="D_R_Price"
+        app:boxBackgroundColor="#F44336"
+        app:boxStrokeColor="#F40909"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textColorHighlight="#090909"
+            android:textColorHint="#9C27B0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/view_Take_Rice_Price_Pkg"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
